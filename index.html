@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101510">
+  <title>BlackSource — пространство проекта</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101510;
+      --card: #191f19;
+      --line: #303b30;
+      --text: #f2f4ed;
+      --muted: #b1b9ad;
+      --green: #b4e36a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 28px 18px;
+      background:
+        radial-gradient(ellipse at 50% 0%, #263324 0, transparent 55%),
+        var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: 100%;
+      max-width: 680px;
+      margin: 42px auto;
+    }
+
+    .label {
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 12px 0;
+      font-size: clamp(38px, 9vw, 64px);
+      line-height: 1;
+      letter-spacing: -.05em;
+    }
+
+    .intro {
+      max-width: 560px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .card {
+      margin-top: 28px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgb(25 31 25 / 92%);
+      box-shadow: 0 20px 60px rgb(0 0 0 / 22%);
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .links {
+      display: grid;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .button {
+      display: flex;
+      min-height: 54px;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #222b21;
+      color: var(--text);
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      border-color: var(--green);
+      background: var(--green);
+      color: #17200f;
+    }
+
+    .button:focus-visible {
+      outline: 3px solid white;
+      outline-offset: 3px;
+    }
+
+    footer {
+      margin-top: 24px;
+      color: #899286;
+      font-size: 13px;
+      line-height: 1.6;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="label">Независимый учебный проект</div>
+    <h1>BlackSource</h1>
+
+    <p class="intro">
+      Пространство для любопытных: OSINT, Python и цифровые инструменты.
+      Разбираемся, как находить и упорядочивать информацию из открытых
+      источников — спокойно, ответственно и с уважением к приватности.
+    </p>
+
+    <section class="card">
+      <h2>О проекте</h2>
+      <p>
+        BlackSource начался с простой идеи, которая однажды пришла в голову:
+        изучать открытые данные, учиться программировать на Python и
+        делиться тем, что интересно. Здесь знания предназначены для
+        обучения и законного использования.
+      </p>
+
+      <nav class="links" aria-label="Ссылки проекта">
+        <a class="button primary" href="https://t.me/milocerdia">
+          Перейти в канал
+        </a>
+        <a class="button" href="https://t.me/+FykUfUYU0gs1YzY8">
+          Открыть форум
+        </a>
+      </nav>
+    </section>
+
+    <footer>
+      Изучайте информацию законно. Уважайте приватность и безопасность других людей.
+    </footer>
+  </main>
+</body>
+</html>
